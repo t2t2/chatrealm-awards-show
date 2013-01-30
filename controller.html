@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>controller</title>
+
+	</head>
+	<body>
+		<div id="sidebar">
+			<ul id="categories" style="list-style: none; padding: 0; max-height: 250px; overflow-y: scroll;">
+			</ul>
+			<a href="#" id="cats-show">Show</a>
+			<a href="#" id="cats-show-anim">AShow</a>
+			<a href="#" id="cats-hide">Hide</a>
+			<div id="current">
+				Current: <span id="current-cat"></span><br />
+
+				<a href="#" id="current-clear">Clear</a> <a href="#" id="current-reveal">Reveal</a><br />
+				<a href="#" id="current-next">Next</a><br />
+			</div>
+		</div>
+		<script type="text/javascript">
+			global.controller = window;
+		</script>
+	</body>
+</html>

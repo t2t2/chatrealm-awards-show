@@ -1,0 +1,359 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	background: url("../img/assault.png");
+	color: #eeeeee;
+	font-family: "Oswald";
+}
+
+#categories {
+	width: 28%;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	bottom: 300px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	-webkit-transition-property: right;
+	-webkit-transition-duration: 1s;
+}
+#categories.offhide {
+	right: -30%;
+}
+#categories li {
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #333333;
+	margin-bottom: 3px;
+	padding: 3px 5px;
+	font-size: 15px;
+	-webkit-transition-property: color, background-color;
+	-webkit-transition-duration: 1s;
+}
+#categories li.jqanim {
+	-webkit-transition-duration: 0s;
+}
+#categories li.faded {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+#categories li.active {
+	background-color: rgba(255, 255, 127, 0.9);
+	color: #000000;
+}
+#content {
+	width: 70%;
+	position: fixed;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	-webkit-transition-property: width;
+	-webkit-transition-duration: 1s;
+}
+#content.full {
+	width: 98%;
+}
+#title {
+	text-align: left;
+	position: absolute;
+	top: 110px;
+	right: 0px;
+	padding: 50px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-transition-property: width, top, padding;
+	-webkit-transition-duration: 1s;
+}
+#title h3 {
+	font-size: 72px;
+	line-height: 82px;
+	margin: 0;
+	-webkit-transition-property: font-size, line-height;
+	-webkit-transition-duration: 1s;
+}
+#title h4 {
+	font-size: 36px;
+	line-height: 48px;
+	margin: 10px 0;
+	-webkit-transition-property: font-size, line-height, font-weight;
+	-webkit-transition-duration: 1s;
+}
+#title.smaller {
+	top: 0px;
+	padding: 0;
+}
+#title.reposed {
+	width: 30%;
+}
+#title.smaller h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+#title.smaller h4 {
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: normal;
+}
+#nominees {
+	top: 110px;
+	position: absolute;
+	right: 0px;
+	width: 100%;
+	-webkit-transition-property: width, top;
+	-webkit-transition-duration: 1s;
+}
+#nominees.reposed {
+	width: 30%;
+	top: 150px;
+}
+
+.vote {
+	border: 1px solid #000;
+	position: relative;
+	margin-bottom: 5px;
+	/* min-height: 59px; */
+	max-width: 930px;
+}
+.vote img {
+	width: 100%;
+}
+
+.vote .vote-text {
+	background: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	bottom: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 2px 5px;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px #000000;
+}
+.vote .vote-text h4 {
+	font-size: 30px;
+	margin: 0 0 2px;
+	-webkit-transition-property: font-size;
+	-webkit-transition-duration: 1s;
+}
+#nominees.reposed .vote .vote-text h4 {
+	font-size: 16px;
+}
+.vote .vote-text small {
+	font-size: 12px;
+	line-height: 12px;
+	display: block;
+}
+.vote .vote-text small a {
+	color: #CE5BFF;
+}
+.vote .vote-text .vote-btn {
+	float: right;
+	font-size: 48px;
+	-webkit-transition-property: font-size;
+	-webkit-transition-duration: 1s;
+}
+#nominees.reposed .vote .vote-text .vote-btn {
+	font-size: 16px;
+}
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	   only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 100%;
+}
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links for images, or javascript/internal links
+	 */
+
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
